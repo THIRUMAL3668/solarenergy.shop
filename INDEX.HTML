@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar Energy</title>
+  <style>
+    :root {
+      --gold: #ffd700;
+      --black: #111;
+      --text-light: #f4f4f4;
+      --bg-dark: rgba(0, 0, 0, 0.6);
+      --accent: #ff9900;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('image.jpg') no-repeat center center/cover;
+      color: var(--text-light);
+    }
+
+    header {
+      background-color: var(--bg-dark);
+      padding: 40px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: var(--gold);
+      letter-spacing: 2px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      background-color: var(--black);
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--gold);
+      color: var(--black);
+    }
+
+    .language-switch {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .language-switch a {
+      text-decoration: none;
+      padding: 10px 25px;
+      color: var(--gold);
+      background-color: var(--black);
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .language-switch a:hover {
+      background-color: var(--gold);
+      color: var(--black);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    section {
+      margin-bottom: 50px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section h2 {
+      color: var(--gold);
+      font-size: 2em;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #f4f4f4;
+      text-align: justify;
+    }
+
+    .typing {
+      border-right: .15em solid #ffd700;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 8s steps(200, end), blink-caret .75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #ffd700; }
+    }
+
+    footer {
+      background-color: var(--gold);
+      color: var(--black);
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      section img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SOLAR ENERGY</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="solar shop.html">Shops</a>
+    </nav>
+  </header><br>
+
+  <div class="container">
+    <section>
+      <div class="language-switch">
+        <p>To translate in Kannada click here</p>
+        <a href="solar kannada.html">ಕನ್ನಡ</a>
+      </div>
+      <h2>The Future of Solar</h2>
+      <img src="01.jpeg" alt="The Future of Solar">
+      <p class="typing">The future of solar energy is bright, with cutting-edge innovations making it more efficient and affordable. High-efficiency panels now generate power even in low light. Battery storage lets you use solar power day or night. AI-powered grids will optimize energy use, while transparent solar panels will blend with buildings. Costs continue to fall, and government incentives make it easier than ever to go solar. With solar-powered homes, vehicles, and businesses on the rise, the future is sustainable, smart, and solar-powered.</p>
+    </section>
+
+   <section>
+      <h2>The Advantages of Solar</h2>
+      <img src="02.jpeg" alt="The Advantages of Solar">
+      <p>India’s sunlight is a blessing! Solar energy slashes your power bills and helps the planet. It’s clean, renewable, and low-maintenance. Government subsidies make solar systems affordable, and solar power works even in remote villages. Whether at home or for business, switching to solar means long-term savings, energy freedom, and higher property value.</p>
+    </section>
+
+    <section>
+      <h2>Government Support</h2>
+      <img src="03.jpeg" alt="Government Support for Solar">
+      <p>Under schemes like <strong>PM Surya Ghar Muft Bijli Yojana</strong>, you can get up to <strong>40% subsidy</strong> for home solar systems. Farmers benefit from <strong>PM-KUSUM</strong> for solar pumps. Businesses enjoy tax breaks and fast returns. Many states offer even more incentives. With <strong>Net Metering</strong>, sell your extra power back to the grid and reduce your bill. Loans, direct bank transfers, and support make going solar easier than ever!</p>
+    </section>
+
+    <section>
+      <h2>Importance of Service</h2>
+      <img src="04.jpeg" alt="Importance of Service">
+      <p>Great service ensures your solar system performs at its best. From expert installation to regular maintenance, we’ve got you covered. Our team is responsive, professional, and always ready to help. We use top-quality tech and clear communication to give you full confidence in your solar setup. With us, your clean energy journey is smooth, worry-free, and reliable!</p>
+    </section>
+  </div>
+  </div>
+
+  <footer>
+    SOLAR ENERGY - MAKING CLEAN ENERGY ACCESSIBLE AND WORRY-FREE
+  </footer>
+</body>
+</html>
+    
+ 
+  
